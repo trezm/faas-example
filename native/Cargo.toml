@@ -17,6 +17,6 @@ neon-build = "0.3.3"
 [dependencies]
 hyper = "0.13"
 neon = "0.3.3"
-thruster = { version = "0.9.0-alpha.2", features = ["thruster_error_handling", "hyper_server"]}
-thruster-x = "0.0.2"
+# thruster = { version = "0.9.0-alpha.3", features = ["thruster_error_handling", "hyper_server"]}
+thruster = { path = "../../thruster/thruster", features = ["thruster_error_handling", "hyper_server"]}
 tokio = { version = "0.2.6", features = ["rt-threaded"] }
